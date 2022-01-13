@@ -4,13 +4,11 @@ const display = document.querySelector(".display-text")
 const selections = [];
 days.forEach(function (day) {
   day.addEventListener("click", function (e) {
-    console.log(e.currentTarget.value);
     setSelectedDays(e.currentTarget.value);
   });
 });
 
 const setSelectedDays = (value) => {
-  console.log(value);
   if (!selections.includes(value)) {
     selections.push(value);
   } else {
